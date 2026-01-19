@@ -1,0 +1,1078 @@
+{
+  "model": "gemma:2b",
+  "timestamp": "2026-01-19 00:57:08",
+  "summary": {
+    "contradictory_contexts": {
+      "avg_consistency_opposing_contexts": 0.8382136821746826,
+      "hedging_rate": 0.0,
+      "total_cases": 3
+    },
+    "response_variance": {
+      "avg_variance": 0.004024409029322366,
+      "avg_mean_similarity": 0.916707714398702,
+      "flip_flop_rate": 0.0,
+      "total_cases": 3,
+      "runs_per_case": 5
+    },
+    "advanced_evaluation": {
+      "overall_consistency": 0.8857583006223043,
+      "overall_hedging_rate": 0.0,
+      "total_cases": 30,
+      "category_breakdown": {
+        "logical_reasoning": {
+          "avg_consistency": 0.8707395493984222,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "historical_facts": {
+          "avg_consistency": 0.9549731761217117,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "temporal_reasoning": {
+          "avg_consistency": 0.8878570199012756,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "numerical_reasoning": {
+          "avg_consistency": 0.8296673695246378,
+          "hedging_rate": 0.0,
+          "count": 6
+        },
+        "scientific_facts": {
+          "avg_consistency": 0.8977154970169068,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "multi_hop_reasoning": {
+          "avg_consistency": 0.8940052191416422,
+          "hedging_rate": 0.0,
+          "count": 6
+        }
+      },
+      "difficulty_breakdown": {
+        "medium": {
+          "avg_consistency": 0.8973274689454299,
+          "hedging_rate": 0.0,
+          "count": 13
+        },
+        "easy": {
+          "avg_consistency": 0.9025616943836212,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "hard": {
+          "avg_consistency": 0.8690188572956965,
+          "hedging_rate": 0.0,
+          "count": 13
+        }
+      }
+    }
+  },
+  "contradictory_contexts": [
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "response_a": "The Eiffel Tower is located in Paris, France.",
+      "response_b": "The Eiffel Tower is located in London, England.",
+      "response_contradictory": "The Eiffel Tower is located in Paris, France.\n\nThe context specifies that the Eiffel Tower is located in Paris, France.",
+      "consistency_a_vs_b": 0.8730267286300659,
+      "consistency_a_vs_both": 0.9309360980987549,
+      "consistency_b_vs_both": 0.8275371193885803,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 73.0,
+        "response_a_length": 45,
+        "response_b_length": 47,
+        "response_both_length": 119
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "Who created Python and when?",
+      "response_a": "Guido van Rossum created Python in 1991.",
+      "response_b": "James Gosling created Python in 1995.",
+      "response_contradictory": "According to the context, **Guido van Rossum created Python in 1991**.",
+      "consistency_a_vs_b": 0.6731262803077698,
+      "consistency_a_vs_both": 0.9421955943107605,
+      "consistency_b_vs_both": 0.6297526359558105,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 31.5,
+        "response_a_length": 40,
+        "response_b_length": 37,
+        "response_both_length": 70
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "response_a": "Sure, the answer is 100\u00b0C.\n\nWater boils at 100\u00b0C at sea level.",
+      "response_b": "Sure, the answer is 90\u00b0C.\n\nWater boils at 90\u00b0C at sea level.",
+      "response_contradictory": "The context says that water boils at 100\u00b0C at sea level. Therefore, water boils at 100\u00b0C sea level.",
+      "consistency_a_vs_b": 0.9684880375862122,
+      "consistency_a_vs_both": 0.8246327042579651,
+      "consistency_b_vs_both": 0.797742486000061,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 38.0,
+        "response_a_length": 62,
+        "response_b_length": 60,
+        "response_both_length": 99
+      },
+      "has_conflict": true
+    }
+  ],
+  "response_variance": [
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "responses": [
+        "The context provides the answer:\n\n>At what temperature does water boil at sea level?\n\n>Answer: 100\u00b0C",
+        "Sure, the answer is 100\u00b0C.\n\nWater boils at 100\u00b0C at sea level.",
+        "Sure, here is the answer to your question:\n\nAt sea level, water boils at 100\u00b0C.",
+        "Sure, the answer is 100\u00b0C.\n\nWater boils at 100\u00b0C at sea level.",
+        "Sure. The answer is 100\u00b0C.\n\nWater boils at 100\u00b0C at sea level."
+      ],
+      "variance_metrics": {
+        "variance": 0.00643356516957283,
+        "mean_similarity": 0.9147367477416992,
+        "std_similarity": 0.08020950853824615,
+        "min_similarity": 0.8053807616233826,
+        "max_similarity": 0.9999998807907104
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "Who created Python and when?",
+      "responses": [
+        "According to the passage, Python was created by Guido van Rossum in 1991.",
+        "Sure, the context says that Python was created by Guido van Rossum in 1991.",
+        "Sure, here's the answer to your question:\n\n**Who created Python and when?**\n\nPython was created by Guido van Rossum in **1991**.",
+        "The context provides the answer to the question.\n\n**Answer:** Guido van Rossum created Python in 1991.",
+        "The context provides the answer to the question.\n\n**Answer:** Guido van Rossum created Python in 1991."
+      ],
+      "variance_metrics": {
+        "variance": 0.0017943786224350333,
+        "mean_similarity": 0.8860173225402832,
+        "std_similarity": 0.042360108345746994,
+        "min_similarity": 0.8513952493667603,
+        "max_similarity": 0.9999997615814209
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "responses": [
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "Sure, the Eiffel Tower is located in Paris, France."
+      ],
+      "variance_metrics": {
+        "variance": 0.0038452832959592342,
+        "mean_similarity": 0.9493690729141235,
+        "std_similarity": 0.062010347843170166,
+        "min_similarity": 0.8734221458435059,
+        "max_similarity": 1.000000238418579
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    }
+  ],
+  "advanced_cases": [
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "What can we conclude about R?",
+      "ground_truth": "Logical contradiction in modus ponens",
+      "response_a": "According to the given context, we can conclude that R is true if P is true.",
+      "response_b": "Based on the given context, we can conclude that R is false. Since P implies Q, and Q implies R, we can conclude that P implies R is false.",
+      "response_contradictory": "From the given context, we can conclude that R is false. This is because if P then Q, and if P is true, then Q is false, then it follows that R must be false.",
+      "consistency_a_vs_b": 0.8131458759307861,
+      "consistency_a_vs_both": 0.8477590084075928,
+      "consistency_b_vs_both": 0.9191031455993652,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 50.5,
+        "response_a_length": 76,
+        "response_b_length": 139,
+        "response_both_length": 158
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "easy",
+      "question": "Based on the contexts, can penguins fly?",
+      "ground_truth": "Logical contradiction between premises",
+      "response_a": "The context does not provide information about whether penguins can fly, so I cannot answer this question from the provided context.",
+      "response_b": "The context does not provide any information about whether penguins can fly, so I cannot answer this question from the provided context.",
+      "response_contradictory": "The context does not provide any information about penguins flying, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 0.9985462427139282,
+      "consistency_a_vs_both": 0.9525460600852966,
+      "consistency_b_vs_both": 0.9495857954025269,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 7.0,
+        "response_a_length": 132,
+        "response_b_length": 136,
+        "response_both_length": 127
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "hard",
+      "question": "Are whales warm-blooded or cold-blooded, and do they have lungs or gills?",
+      "ground_truth": "Logical contradiction in conclusion",
+      "response_a": "The passage does not specify whether whales are warm-blooded or cold-blooded, or whether they have lungs or gills, so I cannot answer this question from the provided context.",
+      "response_b": "Sure, here's the answer to your question:\n\nWhales are mammals, and mammals are warm-blooded, meaning they can generate their own body heat to maintain a constant internal body temperature. They do not have lungs because they breathe through their gills, which are specialized structures located on the sides of their mouths.",
+      "response_contradictory": "Whales are cold-blooded and they do not have lungs.",
+      "consistency_a_vs_b": 0.8029701709747314,
+      "consistency_a_vs_both": 0.8337894678115845,
+      "consistency_b_vs_both": 0.8493798971176147,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 198.0,
+        "response_a_length": 174,
+        "response_b_length": 324,
+        "response_both_length": 51
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "Is the ground wet or dry?",
+      "ground_truth": "Logical contradiction: modus ponens violated",
+      "response_a": "The answer is wet.\n\nThe context specifies that the ground is wet, based on the fact that it rained today and the ground is now wet.",
+      "response_b": "The answer is dry.\n\nThe context states that the ground is dry, and the question asks whether it is wet or dry.",
+      "response_contradictory": "The context states that the ground is wet. So, the answer is \"Yes, the ground is wet\".",
+      "consistency_a_vs_b": 0.8682959079742432,
+      "consistency_a_vs_both": 0.7952600717544556,
+      "consistency_b_vs_both": 0.8140397071838379,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 34.5,
+        "response_a_length": 131,
+        "response_b_length": 110,
+        "response_both_length": 86
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "easy",
+      "question": "On what date did humans first walk on the Moon?",
+      "ground_truth": "Context conflict: July 20 (correct) vs July 21",
+      "response_a": "The context does not mention any date when humans first walked on the Moon, so I cannot answer this question from the provided context.",
+      "response_b": "The passage does not specify on what date humans first walked on the Moon, so I cannot answer this question from the provided context.",
+      "response_contradictory": "The passage does not mention what date humans first walked on the Moon, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 0.9512407779693604,
+      "consistency_a_vs_both": 0.9386093616485596,
+      "consistency_b_vs_both": 0.9920410513877869,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 3.5,
+        "response_a_length": 135,
+        "response_b_length": 134,
+        "response_both_length": 131
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "How many voyages did Columbus make to the Americas?",
+      "ground_truth": "Context conflict: 4 (correct) vs 3",
+      "response_a": "The context says that Christopher Columbus made 4 total voyages to the Americas between 1492-1504.",
+      "response_b": "The context says that Christopher Columbus made 3 total voyages to the Americas between 1492-1504.",
+      "response_contradictory": "Christopher Columbus made 4 total voyages to the Americas between 1492-1504.",
+      "consistency_a_vs_b": 0.9758200645446777,
+      "consistency_a_vs_both": 0.9379057884216309,
+      "consistency_b_vs_both": 0.9155731201171875,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 22.0,
+        "response_a_length": 98,
+        "response_b_length": 98,
+        "response_both_length": 76
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "hard",
+      "question": "How long did the Berlin Wall stand?",
+      "ground_truth": "Context conflict: 28 years (correct: 1961-1989) vs 30 years",
+      "response_a": "The Berlin Wall stood for 28 years, from 1961 to 1989.",
+      "response_b": "The Berlin Wall stood for 30 years, from 1961 to 1989.",
+      "response_contradictory": "The Berlin Wall stood for 30 years from 1961 to 1989.",
+      "consistency_a_vs_b": 0.9795107245445251,
+      "consistency_a_vs_both": 0.976474404335022,
+      "consistency_b_vs_both": 0.99747633934021,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 1.0,
+        "response_a_length": 54,
+        "response_b_length": 54,
+        "response_both_length": 53
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "What was the total death toll of World War I?",
+      "ground_truth": "Context conflict: estimates vary 17-20M",
+      "response_a": "The total death toll of World War I was estimated to be 17 million.",
+      "response_b": "The total death toll of World War I was estimated to be 20 million, including military and civilian casualties.",
+      "response_contradictory": "The total death toll of World War I is estimated to be between 17 and 20 million deaths total (military + civilian).",
+      "consistency_a_vs_b": 0.9133211374282837,
+      "consistency_a_vs_both": 0.9045617580413818,
+      "consistency_b_vs_both": 0.938774824142456,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 27.0,
+        "response_a_length": 67,
+        "response_b_length": 111,
+        "response_both_length": 116
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How many days was the Apollo 11 mission from launch to landing on moon?",
+      "ground_truth": "Context conflict: 4 days vs 5 days",
+      "response_a": "The Apollo 11 mission from launch to landing on the moon lasted 5 days.",
+      "response_b": "The Apollo 11 mission from launch to landing on the moon lasted 13 days.",
+      "response_contradictory": "The Apollo 11 mission from launch to landing on the moon lasted 5 days.",
+      "consistency_a_vs_b": 0.9563822746276855,
+      "consistency_a_vs_both": 1.0000001192092896,
+      "consistency_b_vs_both": 0.9563822746276855,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.5,
+        "response_a_length": 71,
+        "response_b_length": 72,
+        "response_both_length": 71
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "When did peace negotiations begin after WWI?",
+      "ground_truth": "Context conflict: 1919 vs 1920 signing",
+      "response_a": "The passage does not specify when peace negotiations began after WWI, so I cannot answer this question from the provided context.",
+      "response_b": "The passage does not specify when peace negotiations began after WWI, so I cannot answer this question from the provided context.",
+      "response_contradictory": "The passage does not specify when peace negotiations began after WWI, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 129,
+        "response_b_length": 129,
+        "response_both_length": 129
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "How many years after special relativity did Einstein win the Nobel Prize?",
+      "ground_truth": "Context conflict: 16 vs 20 years (1921-1905=16, so context_b is wrong)",
+      "response_a": "The passage says that Einstein won the Nobel Prize 16 years later, in 1921.",
+      "response_b": "The answer is 20. \n\nEinstein won the Nobel Prize in 1921 for his work on the photoelectric effect.",
+      "response_contradictory": "According to the passage, Einstein received the Nobel Prize 20 years later, in 1921.",
+      "consistency_a_vs_b": 0.6529222130775452,
+      "consistency_a_vs_both": 0.9393823146820068,
+      "consistency_b_vs_both": 0.6721228361129761,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 2.5,
+        "response_a_length": 75,
+        "response_b_length": 98,
+        "response_both_length": 84
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How long was the period between Declaration and Constitution?",
+      "ground_truth": "Context conflict: calculation error (actual is ~12 years)",
+      "response_a": "The period between Declaration and Constitution was 12 years. The Declaration of Independence was signed in 1776, and the Constitution was ratified in 1788.",
+      "response_b": "The period between the Declaration of Independence and the ratification of the Constitution was 11 years, from June 21, 1788 to July 4, 1797.",
+      "response_contradictory": "12 years. \n\nThe Declaration of Independence was signed in 1776 and the Constitution was ratified in 1788.",
+      "consistency_a_vs_b": 0.9229013323783875,
+      "consistency_a_vs_both": 0.9528489112854004,
+      "consistency_b_vs_both": 0.8858920335769653,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 43.5,
+        "response_a_length": 156,
+        "response_b_length": 141,
+        "response_both_length": 105
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "What was the average time between iPhone releases from original to iPhone 4?",
+      "ground_truth": "Context conflict in intermediate calculation",
+      "response_a": "The average time between iPhone releases from original to iPhone 4 was not mentioned in the context, so I cannot answer this question from the provided context.",
+      "response_b": "The average time between iPhone releases from original to iPhone 4 was 14 months.",
+      "response_contradictory": "The average time between iPhone releases from original to iPhone 4 was 3 years and 6 months.",
+      "consistency_a_vs_b": 0.90707927942276,
+      "consistency_a_vs_both": 0.8968375325202942,
+      "consistency_b_vs_both": 0.9683982133865356,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 28.5,
+        "response_a_length": 160,
+        "response_b_length": 81,
+        "response_both_length": 92
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "Calculate the distance from Sun to Earth in million kilometers.",
+      "ground_truth": "Context conflict: 143.9M km vs 149.2M km",
+      "response_a": "The distance from Sun to Earth is given by the formula:\n\n$$d = \\frac{v \\cdot t}{365 \\cdot 24 \\cdot 60}$$\n\n$$d = \\frac{(299,792 \\mathrm{ km/s})(8 \\mathrm{ min})(60 \\mathrm{ s})}{365 \\cdot 24 \\cdot 60}$$\n\n$$d = 150,100,000 \\mathrm{ km}$$\n\nConverting to million kilometers, we get:\n\n$$d = \\frac{150,100,000}{1,000} = 150,100 \\mathrm{ km}$$",
+      "response_b": "The distance from the Sun to Earth is given by the formula:\n\n$$d = \\frac{c}{v}$$\n\nwhere:\n\n$$d$$ is the distance in kilometers\n$$c$$ is the speed of light in kilometers per second\n$$v$$ is the speed of light in meters per second\n\nSubstituting the values, we get:\n\n$$d = \\frac{299,792 \\text{ km/s}}{8.3 \\text{ min}} = 3.61 \\times 10^{14} \\text{ m}$$\n\nConverting to million kilometers, we get:\n\n$$d = 3.61 \\times 10^{14} \\text{ m} \\left(\\frac{1 \\text{ million km}}{10^{6} \\text{ m}}\\right) = 3.61 \\text{ million km}$$",
+      "response_contradictory": "The distance from Sun to Earth can be calculated using the formula:\n\n$$d = \\frac{v\\cdot t}{2}$$\n\nwhere:\n\n$$d$$ is the distance in million kilometers\n$$v$$ is the speed of light in km/s\n$$t$$ is the time taken in minutes\n\nSubstituting the values into the formula, we get:\n\n$$d = \\frac{(299,792 \\text{ km/s})(8\\text{ min})}{2}$$\n\n$$d = 149,486,200 \\text{ km}$$\n\nConverting to million kilometers, we get:\n\n$$d = 149,486,200 \\text{ km} \\times 10^6 \\text{ m/km} \\approx 150 \\text{ million km}$$\n\nTherefore, the distance from Sun to Earth is approximately 150 million kilometers.",
+      "consistency_a_vs_b": 0.8779926896095276,
+      "consistency_a_vs_both": 0.9240469932556152,
+      "consistency_b_vs_both": 0.938395082950592,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 148.0,
+        "response_a_length": 336,
+        "response_b_length": 514,
+        "response_both_length": 573
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "easy",
+      "question": "What is the exact height of K2 in meters?",
+      "ground_truth": "Context conflict: 8,612m vs 8,238m",
+      "response_a": "The exact height of K2 is 237m shorter than Everest, which is 8,849m.\n\nSo, 8,849m - 237m = 8,612m.\n\nTherefore, the exact height of K2 is 8,612m.",
+      "response_b": "The exact height of K2 is not mentioned in the context, so I cannot answer this question from the provided context.",
+      "response_contradictory": "The exact height of K2 is not mentioned in the context, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 0.7173714637756348,
+      "consistency_a_vs_both": 0.7173714637756348,
+      "consistency_b_vs_both": 1.0000001192092896,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 14.5,
+        "response_a_length": 144,
+        "response_b_length": 115,
+        "response_both_length": 115
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct final amount and total return percentage?",
+      "ground_truth": "Context conflict: ~96.7% vs 100% return",
+      "response_a": "**Final amount:** $19,672\n\n**Total return percentage:** 144.74%",
+      "response_b": "**Final amount**: $20,000\n\n**Total return percentage**: 142.86%",
+      "response_contradictory": "Sure, here's the correct final amount and total return percentage:\n\n**Final amount:** $19,672\n\n**Total return percentage:** 102.24%\n\n**Explanation:**\n\nThe total return is the final amount minus the initial investment. In this case, the initial investment is $10,000, and the final amount is $19,672. Therefore, the total return is:\n\n$19,672 - $10,000 = $9,672\n\nThe total return percentage is the ratio of the total return to the initial investment, expressed as a percentage:\n\n(9,672 / 10,000) * 100 = 96.72%\n\nTherefore, the correct final amount and total return percentage are $19,672 and 102.24%, respectively.",
+      "consistency_a_vs_b": 0.8490978479385376,
+      "consistency_a_vs_both": 0.8038119077682495,
+      "consistency_b_vs_both": 0.7558577060699463,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 6,
+          "confidence": 0.0
+        },
+        "length_change": 549.0,
+        "response_a_length": 63,
+        "response_b_length": 63,
+        "response_both_length": 612
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct annual compound growth rate?",
+      "ground_truth": "Context conflict: 4.14% (correct) vs 5%",
+      "response_a": "The correct annual compound growth rate is 4.14%.",
+      "response_b": "The correct answer is 5%. \n\nCompound growth rate = (100)^(5/100) - 1 = 5%.",
+      "response_contradictory": "The correct annual compound growth rate is 5%.\n\nThe passage states that the population grows from 1M to 1.5M in 10 years, which is 50% growth.",
+      "consistency_a_vs_b": 0.7431748509407043,
+      "consistency_a_vs_both": 0.8157428503036499,
+      "consistency_b_vs_both": 0.793401837348938,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 3,
+          "confidence": 0.0
+        },
+        "length_change": 80.5,
+        "response_a_length": 49,
+        "response_b_length": 74,
+        "response_both_length": 142
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "What is the pace difference (min/km) between elite and average runners?",
+      "ground_truth": "Context conflict in average time",
+      "response_a": "The pace difference between elite and average runners can be calculated as follows:\n\n**Elite runners**: 2h 10min = 120min\n\n**Average runners**: 4h 30min = 270min\n\n**Pace difference**: (120min - 270min) / 42.195 = 20.55 min/km\n\nTherefore, the pace difference between elite and average runners is 20.55 min/km.",
+      "response_b": "To calculate the pace difference between elite and average runners, we can subtract the average runner's pace from the elite runner's pace.\n\nElite runner's pace = Marathon / 2h 10min = 42.195 km / 2h 10min = 21.0975 km/h\n\nAverage runner's pace = Marathon / 4h 00min = 42.195 km / 4h 00min = 10.54625 km/h\n\nPace difference = Elite runner's pace - Average runner's pace = 21.0975 km/h - 10.54625 km/h = 10.55125 km/h\n\nTherefore, the pace difference between elite and average runners is 10.55125 km/h.",
+      "response_contradictory": "The pace difference between elite and average runners is not provided in the context, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 0.9326247572898865,
+      "consistency_a_vs_both": 0.8826552033424377,
+      "consistency_b_vs_both": 0.8649558424949646,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 258.0,
+        "response_a_length": 308,
+        "response_b_length": 498,
+        "response_both_length": 145
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What is the typical efficiency of photosynthesis in converting sunlight to chemical energy?",
+      "ground_truth": "Context conflict: 3-6% (correct for overall) vs 10-15%",
+      "response_a": "The answer is 3-6%.\n\nThe efficiency of photosynthesis in converting sunlight to chemical energy is estimated to be between 3 and 6%.",
+      "response_b": "The typical efficiency of photosynthesis in converting sunlight to chemical energy is about 10-15%.",
+      "response_contradictory": "The typical efficiency of photosynthesis in converting sunlight to chemical energy is between 10-15%.",
+      "consistency_a_vs_b": 0.9532943964004517,
+      "consistency_a_vs_both": 0.950243353843689,
+      "consistency_b_vs_both": 0.9981786012649536,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 14.5,
+        "response_a_length": 132,
+        "response_b_length": 99,
+        "response_both_length": 101
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "easy",
+      "question": "At what temperature should a person be considered to have a fever?",
+      "ground_truth": "Context conflict: clinical definitions vary",
+      "response_a": "According to the context, a person should be considered to have a fever when their temperature reaches 38\u00b0C (100.4\u00b0F).",
+      "response_b": "According to the context, a person should be considered to have a fever at 37.5\u00b0C (99.5\u00b0F).",
+      "response_contradictory": "According to the passage, a fever is considered to be when a person's body temperature is 37.5\u00b0C (99.5\u00b0F).",
+      "consistency_a_vs_b": 0.9430882930755615,
+      "consistency_a_vs_both": 0.9159163236618042,
+      "consistency_b_vs_both": 0.9356380701065063,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 3,
+          "confidence": 0.0
+        },
+        "length_change": 1.5,
+        "response_a_length": 118,
+        "response_b_length": 91,
+        "response_both_length": 106
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What percentage of the body's energy does the brain consume?",
+      "ground_truth": "Context conflict: 20% vs 25% (literature varies 20-25%)",
+      "response_a": "The answer is 20%. \n\nThe brain represents 2% of body weight, but uses 20% of body's energy/oxygen.",
+      "response_b": "The answer is 25%. \n\nThe context states that the brain weighs ~1.4 kg (2% of body weight), but uses 25% of body's energy/oxygen.",
+      "response_contradictory": "The brain uses 25% of the body's energy/oxygen.\n\nThe context says that the brain weighs ~1.4 kg (2% of body weight) but uses 25% of body's energy/oxygen.",
+      "consistency_a_vs_b": 0.9504272937774658,
+      "consistency_a_vs_both": 0.9185993671417236,
+      "consistency_b_vs_both": 0.9468802213668823,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 1,
+          "sentence_count": 3,
+          "confidence": 0.3333333333333333
+        },
+        "length_change": 40.0,
+        "response_a_length": 98,
+        "response_b_length": 128,
+        "response_both_length": 153
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "What is the exact oxygen percentage in Earth's atmosphere?",
+      "ground_truth": "Context conflict: 21% (correct) vs 20%",
+      "response_a": "The exact oxygen percentage in Earth's atmosphere is 21%.",
+      "response_b": "The exact oxygen percentage in Earth's atmosphere is 20%.\n\nThe context specifies that 20% of the atmosphere is composed of oxygen.",
+      "response_contradictory": "The exact oxygen percentage in Earth's atmosphere is 21%. \n\nThe context states that 21% of the atmosphere is composed of oxygen, while the remaining 78% is composed of nitrogen.",
+      "consistency_a_vs_b": 0.8993078470230103,
+      "consistency_a_vs_both": 0.9194532632827759,
+      "consistency_b_vs_both": 0.8713642954826355,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 83.5,
+        "response_a_length": 57,
+        "response_b_length": 130,
+        "response_both_length": 177
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "In what year was the DNA double helix structure discovered?",
+      "ground_truth": "Context conflict: 1953 (correct) vs 1952",
+      "response_a": "The context does not specify the year in which the DNA double helix structure was discovered, so I cannot answer this question from the provided context.",
+      "response_b": "The text says that the DNA double helix structure was discovered in 1952 by Watson & Crick.",
+      "response_contradictory": "The DNA double helix structure was discovered in 1952 by Watson & Crick. \n\nThe passage does not specify the year in which Rosalind Franklin's X-ray data was crucial in the discovery.",
+      "consistency_a_vs_b": 0.7424596548080444,
+      "consistency_a_vs_both": 0.7683292627334595,
+      "consistency_b_vs_both": 0.8960627317428589,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 1,
+          "sentence_count": 2,
+          "confidence": 0.5
+        },
+        "length_change": 60.0,
+        "response_a_length": 153,
+        "response_b_length": 91,
+        "response_both_length": 182
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Can we definitively say X is a C?",
+      "ground_truth": "Context conflict: logical validity",
+      "response_a": "Yes. The premise is that if all A are B, and all B are C, then all A are C. Since X is an A, and A is equal to B according to the premise, we can conclude that X is also a C.",
+      "response_b": "The answer is no.\n\nThe statement \"If all A are B, and some B are C, then all A are C\" is a generalization. It is not a statement about the individual case of X. Therefore, we cannot definitively say whether X is a C based on the given context.",
+      "response_contradictory": "The answer is no. The context does not allow us to conclude that X is a C.\n\nThe first premise is that if all A are B, and all B are C, then all A are C. This means that if we know that all A are B, and all B are C, then we can conclude that all A are C. However, the second premise is that if all A are B, and some B are C, then all A are C. This means that we cannot conclude from the first premise that all A are C.",
+      "consistency_a_vs_b": 0.7944148778915405,
+      "consistency_a_vs_both": 0.8775343894958496,
+      "consistency_b_vs_both": 0.8422421216964722,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": true,
+          "negation_count": 3,
+          "sentence_count": 6,
+          "confidence": 0.5
+        },
+        "length_change": 208.5,
+        "response_a_length": 174,
+        "response_b_length": 243,
+        "response_both_length": 417
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What is the GDP per capita and which sector employs the most people?",
+      "ground_truth": "Context conflict: sector percentages don't match",
+      "response_a": "**GDP per capita:**\n\nGDP per capita = GDP / Population = $5 trillion / 100M = $50,000\n\n**Employment distribution:**\n\n* Services: 60% = 0.6\n* Manufacturing: 30% = 0.3\n* Agriculture: 10% = 0.1\n\n**Therefore, the GDP per capita is $50,000 and services employs the most people (60%).**",
+      "response_b": "**GDP per capita:**\n\nGDP per capita = GDP / Population = $5 trillion / 100M = $50,000\n\n**Sector with the most people employed:**\n\nThe sector with the most people employed is services, with 50%.",
+      "response_contradictory": "Sure, here's the answer:\n\n* **GDP per capita**: $10,000\n* **Most productive sector**: Services (50%)",
+      "consistency_a_vs_b": 0.9310613870620728,
+      "consistency_a_vs_both": 0.7417111396789551,
+      "consistency_b_vs_both": 0.7932924032211304,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 136.5,
+        "response_a_length": 280,
+        "response_b_length": 193,
+        "response_both_length": 100
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Rank Alice, Bob, and Carol by height and state their exact heights.",
+      "ground_truth": "Context conflict in ordering",
+      "response_a": "Alice: 10cm\nBob: 5cm\nCarol: 160cm",
+      "response_b": "Alice: 10cm\nBob: 13cm\nCarol: 160cm",
+      "response_contradictory": "Alice: 10cm\n\nBob: 5cm\n\nCarol: 160cm",
+      "consistency_a_vs_b": 0.9888407588005066,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 0.9888407588005066,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 1.5,
+        "response_a_length": 33,
+        "response_b_length": 34,
+        "response_both_length": 35
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What percentage of Earth's oxygen comes from Brazilian Amazon forests?",
+      "ground_truth": "Context conflict: 12% vs 3.6%",
+      "response_a": "The answer is 20%.\n\nThe Amazon rainforest produces 20% of Earth's oxygen. Brazil contains 60% of the Amazon. So, the percentage of Earth's oxygen that comes from Brazilian Amazon forests is 20%.",
+      "response_b": "60% of Earth's oxygen comes from Brazilian Amazon forests. \n\nThe passage says that Brazil contains 60% of the Amazon, which means that 60% of Earth's oxygen comes from Brazilian Amazon forests.",
+      "response_contradictory": "The answer is 60%.\n\nThe context states that Brazil contains 60% of the Amazon, which produces 6% of Earth's oxygen.",
+      "consistency_a_vs_b": 0.9118587970733643,
+      "consistency_a_vs_both": 0.8911793231964111,
+      "consistency_b_vs_both": 0.8771959543228149,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 78.5,
+        "response_a_length": 194,
+        "response_b_length": 193,
+        "response_both_length": 115
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "When and where do the trains meet?",
+      "ground_truth": "Context conflict: different meeting times",
+      "response_a": "The two trains will meet at 11 AM at the meeting point, which is 400 km away from city A.",
+      "response_b": "The trains will meet at the same time, which is 10 AM.\n\nThey leave at 9 AM and travel for 2 hours (10 AM - 12 PM) at a speed of 100 km/h. They cover 100 km in this time.\n\nSimilarly, the trains leave at 10 AM and travel for 2 hours (10 AM - 12 PM) at a speed of 150 km/h. They cover 150 km in this time.\n\nSince the distance between cities is 600 km, the trains will meet at the same location, which is the same time.",
+      "response_contradictory": "The trains will meet at the same time and place, which is at 10 AM. \n\nSince Train A travels 100 km/h for 4 hours, it will cover 400 km. Since Train B travels 120 km/h for 3 hours, it will cover 360 km. \n\nTherefore, the trains meet at 10 AM at the same location.",
+      "consistency_a_vs_b": 0.7699368000030518,
+      "consistency_a_vs_both": 0.7430217862129211,
+      "consistency_b_vs_both": 0.9134454131126404,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 4,
+          "confidence": 0.0
+        },
+        "length_change": 9.0,
+        "response_a_length": 89,
+        "response_b_length": 415,
+        "response_both_length": 261
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What was Company X's total revenue growth from 2020 to 2022?",
+      "ground_truth": "Context conflict: 80% growth vs 20% growth",
+      "response_a": "The total revenue growth from 2020 to 2022 can be calculated by adding the growth percentages for each year:\n\n2020 growth = 50% = 0.5\n2021 growth = 20% = 0.2\n\nTotal revenue growth = 0.5 + 0.2 = 0.7\n\nTherefore, Company X's total revenue growth from 2020 to 2022 was 70%.",
+      "response_b": "The total revenue growth from 2020 to 2022 would be calculated as follows:\n\n(100M x 50%) - (100M x 20%) = $50M + $20M = $70M\n\nTherefore, Company X's total revenue growth from 2020 to 2022 was 70%.",
+      "response_contradictory": "The total revenue growth from 2020 to 2022 was 50% + 20% = 70%.",
+      "consistency_a_vs_b": 0.9679186940193176,
+      "consistency_a_vs_both": 0.826643705368042,
+      "consistency_b_vs_both": 0.8888456225395203,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 169.5,
+        "response_a_length": 269,
+        "response_b_length": 196,
+        "response_both_length": 63
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "How long does it take to fly around Earth at 1000 km/h?",
+      "ground_truth": "Context conflict: 40h (correct) vs 38h",
+      "response_a": "The passage does not specify the time it takes to fly around Earth at 1000 km/h, so I cannot answer this question from the provided context.",
+      "response_b": "The passage tells us that traveling at 1000 km/h takes 38 hours to circumnavigate Earth. Therefore, the time taken to fly around Earth at 1000 km/h is equal to 38 hours.",
+      "response_contradictory": "The passage does not provide information about how long it takes to fly around Earth at 1000 km/h, so I cannot answer this question from the provided context.",
+      "consistency_a_vs_b": 0.8577426075935364,
+      "consistency_a_vs_both": 0.9730751514434814,
+      "consistency_b_vs_both": 0.8633085489273071,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 3.5,
+        "response_a_length": 140,
+        "response_b_length": 169,
+        "response_both_length": 158
+      },
+      "has_conflict": true
+    }
+  ]
+}

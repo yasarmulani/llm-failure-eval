@@ -1,0 +1,1050 @@
+{
+  "model": "qwen2.5:1.5b",
+  "timestamp": "2026-01-19 00:58:06",
+  "summary": {
+    "contradictory_contexts": {
+      "avg_consistency_opposing_contexts": 1.0,
+      "hedging_rate": 0.0,
+      "total_cases": 3
+    },
+    "response_variance": {
+      "avg_variance": 0.0,
+      "avg_mean_similarity": 1.0,
+      "flip_flop_rate": 0.0,
+      "total_cases": 3,
+      "runs_per_case": 5
+    },
+    "advanced_evaluation": {
+      "overall_consistency": 1.0,
+      "overall_hedging_rate": 0.0,
+      "total_cases": 30,
+      "category_breakdown": {
+        "logical_reasoning": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "historical_facts": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "temporal_reasoning": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "numerical_reasoning": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 6
+        },
+        "scientific_facts": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "multi_hop_reasoning": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 6
+        }
+      },
+      "difficulty_breakdown": {
+        "hard": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 13
+        },
+        "easy": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "medium": {
+          "avg_consistency": 1.0,
+          "hedging_rate": 0.0,
+          "count": 13
+        }
+      }
+    }
+  },
+  "contradictory_contexts": [
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "Who created Python and when?",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    }
+  ],
+  "response_variance": [
+    {
+      "question": "Who created Python and when?",
+      "responses": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "variance_metrics": {
+        "variance": 0.0,
+        "mean_similarity": 1.0,
+        "std_similarity": 0.0,
+        "min_similarity": 1.0,
+        "max_similarity": 1.0
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "responses": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "variance_metrics": {
+        "variance": 0.0,
+        "mean_similarity": 1.0,
+        "std_similarity": 0.0,
+        "min_similarity": 1.0,
+        "max_similarity": 1.0
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "responses": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "variance_metrics": {
+        "variance": 0.0,
+        "mean_similarity": 1.0,
+        "std_similarity": 0.0,
+        "min_similarity": 1.0,
+        "max_similarity": 1.0
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    }
+  ],
+  "advanced_cases": [
+    {
+      "category": "logical_reasoning",
+      "difficulty": "hard",
+      "question": "Are whales warm-blooded or cold-blooded, and do they have lungs or gills?",
+      "ground_truth": "Logical contradiction in conclusion",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "easy",
+      "question": "Based on the contexts, can penguins fly?",
+      "ground_truth": "Logical contradiction between premises",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "Is the ground wet or dry?",
+      "ground_truth": "Logical contradiction: modus ponens violated",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "What can we conclude about R?",
+      "ground_truth": "Logical contradiction in modus ponens",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "What was the total death toll of World War I?",
+      "ground_truth": "Context conflict: estimates vary 17-20M",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "easy",
+      "question": "On what date did humans first walk on the Moon?",
+      "ground_truth": "Context conflict: July 20 (correct) vs July 21",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "hard",
+      "question": "How long did the Berlin Wall stand?",
+      "ground_truth": "Context conflict: 28 years (correct: 1961-1989) vs 30 years",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "How many voyages did Columbus make to the Americas?",
+      "ground_truth": "Context conflict: 4 (correct) vs 3",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "How many years after special relativity did Einstein win the Nobel Prize?",
+      "ground_truth": "Context conflict: 16 vs 20 years (1921-1905=16, so context_b is wrong)",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How long was the period between Declaration and Constitution?",
+      "ground_truth": "Context conflict: calculation error (actual is ~12 years)",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How many days was the Apollo 11 mission from launch to landing on moon?",
+      "ground_truth": "Context conflict: 4 days vs 5 days",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "What was the average time between iPhone releases from original to iPhone 4?",
+      "ground_truth": "Context conflict in intermediate calculation",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "When did peace negotiations begin after WWI?",
+      "ground_truth": "Context conflict: 1919 vs 1920 signing",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct final amount and total return percentage?",
+      "ground_truth": "Context conflict: ~96.7% vs 100% return",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "Calculate the distance from Sun to Earth in million kilometers.",
+      "ground_truth": "Context conflict: 143.9M km vs 149.2M km",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "What is the pace difference (min/km) between elite and average runners?",
+      "ground_truth": "Context conflict in average time",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "easy",
+      "question": "What is the exact height of K2 in meters?",
+      "ground_truth": "Context conflict: 8,612m vs 8,238m",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "How long does it take to fly around Earth at 1000 km/h?",
+      "ground_truth": "Context conflict: 40h (correct) vs 38h",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "easy",
+      "question": "At what temperature should a person be considered to have a fever?",
+      "ground_truth": "Context conflict: clinical definitions vary",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What is the typical efficiency of photosynthesis in converting sunlight to chemical energy?",
+      "ground_truth": "Context conflict: 3-6% (correct for overall) vs 10-15%",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "What is the exact oxygen percentage in Earth's atmosphere?",
+      "ground_truth": "Context conflict: 21% (correct) vs 20%",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "In what year was the DNA double helix structure discovered?",
+      "ground_truth": "Context conflict: 1953 (correct) vs 1952",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What percentage of the body's energy does the brain consume?",
+      "ground_truth": "Context conflict: 20% vs 25% (literature varies 20-25%)",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What is the GDP per capita and which sector employs the most people?",
+      "ground_truth": "Context conflict: sector percentages don't match",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "When and where do the trains meet?",
+      "ground_truth": "Context conflict: different meeting times",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What percentage of Earth's oxygen comes from Brazilian Amazon forests?",
+      "ground_truth": "Context conflict: 12% vs 3.6%",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What was Company X's total revenue growth from 2020 to 2022?",
+      "ground_truth": "Context conflict: 80% growth vs 20% growth",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Can we definitively say X is a C?",
+      "ground_truth": "Context conflict: logical validity",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Rank Alice, Bob, and Carol by height and state their exact heights.",
+      "ground_truth": "Context conflict in ordering",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct annual compound growth rate?",
+      "ground_truth": "Context conflict: 4.14% (correct) vs 5%",
+      "response_a": "",
+      "response_b": "",
+      "response_contradictory": "",
+      "consistency_a_vs_b": 1.0,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 1.0,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 0,
+        "response_b_length": 0,
+        "response_both_length": 0
+      },
+      "has_conflict": true
+    }
+  ]
+}

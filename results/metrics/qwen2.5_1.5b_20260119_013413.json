@@ -1,0 +1,1090 @@
+{
+  "model": "qwen2.5:1.5b",
+  "timestamp": "2026-01-19 01:34:13",
+  "summary": {
+    "contradictory_contexts": {
+      "avg_consistency_opposing_contexts": 0.8425772587458292,
+      "hedging_rate": 0.0,
+      "total_cases": 3
+    },
+    "response_variance": {
+      "avg_variance": 6.762576716331144e-05,
+      "avg_mean_similarity": 0.9931758840878805,
+      "flip_flop_rate": 0.0,
+      "total_cases": 3,
+      "runs_per_case": 5
+    },
+    "advanced_evaluation": {
+      "overall_consistency": 0.865150648355484,
+      "overall_hedging_rate": 0.0,
+      "total_cases": 30,
+      "category_breakdown": {
+        "multi_hop_reasoning": {
+          "avg_consistency": 0.8994984726111094,
+          "hedging_rate": 0.0,
+          "count": 6
+        },
+        "scientific_facts": {
+          "avg_consistency": 0.8171728372573852,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "numerical_reasoning": {
+          "avg_consistency": 0.8658050199349722,
+          "hedging_rate": 0.0,
+          "count": 6
+        },
+        "historical_facts": {
+          "avg_consistency": 0.9359472244977951,
+          "hedging_rate": 0.0,
+          "count": 4
+        },
+        "temporal_reasoning": {
+          "avg_consistency": 0.8513471961021424,
+          "hedging_rate": 0.0,
+          "count": 5
+        },
+        "logical_reasoning": {
+          "avg_consistency": 0.8190773576498032,
+          "hedging_rate": 0.0,
+          "count": 4
+        }
+      },
+      "difficulty_breakdown": {
+        "hard": {
+          "avg_consistency": 0.8129463654298049,
+          "hedging_rate": 0.0,
+          "count": 13
+        },
+        "medium": {
+          "avg_consistency": 0.9068869123092065,
+          "hedging_rate": 0.0,
+          "count": 13
+        },
+        "easy": {
+          "avg_consistency": 0.8991717100143433,
+          "hedging_rate": 0.0,
+          "count": 4
+        }
+      }
+    }
+  },
+  "contradictory_contexts": [
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "response_a": "The Eiffel Tower is located in Paris, France.",
+      "response_b": "The Eiffel Tower is located in Paris, France. It has been moved to the Trocad\u00e9ro district of Paris from its original location on the Champ de Mars due to safety concerns and logistical challenges associated with transporting it internationally.",
+      "response_contradictory": "The Eiffel Tower is located in Paris, France.",
+      "consistency_a_vs_b": 0.9163404703140259,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 0.9163404703140259,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 99.5,
+        "response_a_length": 45,
+        "response_b_length": 244,
+        "response_both_length": 45
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "Who created Python and when?",
+      "response_a": "Guido van Rossum created Python in 1991.",
+      "response_b": "James Gosling created Python in 1995.",
+      "response_contradictory": "Python was created by Guido van Rossum in 1991.",
+      "consistency_a_vs_b": 0.6731262803077698,
+      "consistency_a_vs_both": 0.9810590744018555,
+      "consistency_b_vs_both": 0.6666523218154907,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 8.5,
+        "response_a_length": 40,
+        "response_b_length": 37,
+        "response_both_length": 47
+      },
+      "has_conflict": true
+    },
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "response_a": "At sea level, water boils at 100\u00b0C (or 212\u00b0F in the United States).",
+      "response_b": "At sea level, water boils at 100\u00b0C.",
+      "response_contradictory": "At sea level, water boils at 100\u00b0C (212\u00b0F).",
+      "consistency_a_vs_b": 0.9382650256156921,
+      "consistency_a_vs_both": 0.9717812538146973,
+      "consistency_b_vs_both": 0.963100254535675,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 8.0,
+        "response_a_length": 67,
+        "response_b_length": 35,
+        "response_both_length": 43
+      },
+      "has_conflict": true
+    }
+  ],
+  "response_variance": [
+    {
+      "question": "Who created Python and when?",
+      "responses": [
+        "Guido van Rossum created Python in 1991.",
+        "Guido van Rossum created Python in 1991.",
+        "Guido van Rossum created Python in 1991.",
+        "Guido van Rossum created Python in 1991.",
+        "Guido van Rossum created Python in 1991."
+      ],
+      "variance_metrics": {
+        "variance": 0.0,
+        "mean_similarity": 1.0000001192092896,
+        "std_similarity": 0.0,
+        "min_similarity": 1.0000001192092896,
+        "max_similarity": 1.0000001192092896
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "At what temperature does water boil at sea level?",
+      "responses": [
+        "At sea level, water boils at 100\u00b0C (212\u00b0F) under standard atmospheric conditions.",
+        "At sea level, water boils at 100\u00b0C (or 212\u00b0F in the United States).",
+        "At sea level, water boils at 100\u00b0C (212\u00b0F).",
+        "At sea level, water boils at 100\u00b0C (212\u00b0F) under standard atmospheric conditions.",
+        "At sea level, water boils at 100\u00b0C (212\u00b0F) under standard atmospheric conditions."
+      ],
+      "variance_metrics": {
+        "variance": 0.00020287730148993433,
+        "mean_similarity": 0.9795272946357727,
+        "std_similarity": 0.01424350030720234,
+        "min_similarity": 0.9643735885620117,
+        "max_similarity": 1.0
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    },
+    {
+      "question": "Where is the Eiffel Tower located?",
+      "responses": [
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France.",
+        "The Eiffel Tower is located in Paris, France."
+      ],
+      "variance_metrics": {
+        "variance": 0.0,
+        "mean_similarity": 1.000000238418579,
+        "std_similarity": 0.0,
+        "min_similarity": 1.000000238418579,
+        "max_similarity": 1.000000238418579
+      },
+      "has_flip_flop": false,
+      "num_runs": 5
+    }
+  ],
+  "advanced_cases": [
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "When and where do the trains meet?",
+      "ground_truth": "Context conflict: different meeting times",
+      "response_a": "To determine when and where the two trains meet, we need to calculate how far each train has traveled by the time they are together.\n\nTrain A travels for 3 hours before Train B starts (from 9 AM until 10 AM). In this time:\n- Train A covers \\( 100 \\text{ km/h} \\times 3 \\text{ h} = 300 \\text{ km} \\)\n\nNow, the total distance between the cities is 600 km. After 3 hours of Train A's travel, there are still:\n- \\( 600 \\text{ km} - 300 \\text{ km} = 300 \\text{ km} \\) left to be covered.\n\nTrain B leaves at 10 AM and travels at a speed of 120 km/h. We need to find out how long it will take Train B to cover the remaining 300 km distance:\n- Time for Train B: \\( \\frac{300 \\text{ km}}{120 \\text{ km/h}} = 2.5 \\text{ h} \\)\n\nSo, Train B starts at 10 AM and will reach the meeting point",
+      "response_b": "To determine when and where the two trains will meet, we need to calculate the time it takes for each train to reach the meeting point and then find out how far Train A travels in that time before catching up with Train B.\n\n### Step 1: Calculate Time for Train A to Reach the Meeting Point\n\nTrain A travels at a speed of 100 km/h. The distance between the two cities is 600 km.\n- Let \\( t_A \\) be the time it takes for Train A to reach the meeting point.\n- Using the formula \\( \\text{Distance} = \\text{Speed} \\times \\text{Time} \\):\n\\[ 600 \\text{ km} = 100 \\text{ km/h} \\times t_A \\]\n\\[ t_A = \\frac{600}{100} = 6 \\text{ hours} \\]\n\nSo, Train A will reach the meeting point 6 hours after it starts traveling.\n\n### Step 2: Calculate Time for Train B to Reach the Meeting Point\n\nTrain B travels at a speed of 150 km/h. The distance between the two cities is also 600 km.\n- Let \\( t_B \\) be",
+      "response_contradictory": "To determine when and where the two trains will meet, we need to set up equations for each train's distance as a function of time from their departure times and solve for when they are at the same point in their respective distances traveled. \n\nLet's denote:\n- \\( t \\) as the number of hours after 9 AM.\n\nFor Train A:\n- It travels at 100 km/h.\n- Starts at 9 AM, so it will have been traveling for \\( t \\) hours by the time they meet.\n\nThe distance covered by Train A in \\( t \\) hours is given by:\n\\[ D_A = 100t \\]\n\nFor Train B:\n- It travels at 150 km/h.\n- Starts at 10 AM, which is 1 hour after Train A departs, so it will have been traveling for \\( t - 1 \\) hours.\n\nThe distance covered by Train B in \\( t - 1 \\) hours is given by:\n\\[ D_B = 150(t - 1) \\]\n\nSince they meet somewhere between the two cities (600 km apart), their distances traveled must add up to 600 km. Therefore, we set up the equation:\n\n\\[ D",
+      "consistency_a_vs_b": 0.8710182905197144,
+      "consistency_a_vs_both": 0.8620123863220215,
+      "consistency_b_vs_both": 0.8553495407104492,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 8,
+          "confidence": 0.0
+        },
+        "length_change": 79.5,
+        "response_a_length": 777,
+        "response_b_length": 884,
+        "response_both_length": 910
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What percentage of Earth's oxygen comes from Brazilian Amazon forests?",
+      "ground_truth": "Context conflict: 12% vs 3.6%",
+      "response_a": "To find out what percentage of Earth's oxygen comes from Brazilian Amazon forests, we need to follow these steps:\n\n1. **Identify the total amount of oxygen produced by the Amazon rainforest**: The context states that it produces 20% of Earth\u2019s oxygen.\n   \n2. **Determine Brazil's share in terms of the Amazon forest area**: According to the problem, Brazil contains 60% of the Amazon.\n\n3. **Calculate Brazil's contribution to Earth's oxygen**:\n   - If Brazil covers 60% of the Amazon rainforest and this part produces 20% of Earth\u2019s oxygen, then we can calculate how much of Brazil's portion contributes to the total amount by using a weighted average.\n   \n   \\[\n   \\text{Brazil's contribution} = (\\text{Percentage of Amazon covered by Brazil}) \\times (\\text{Oxygen produced per unit area})\n   \\]\n  \n4. **Plug in the values**:\n   - Percentage of Amazon covered by Brazil: 60%\n   - Oxygen production per unit area in Amazon rainforest: 20%\n\n   So, Brazil's contribution to Earth\u2019s oxygen:\n\n   \\[\n   \\text{Brazil's contribution} = (0.60) \\times (",
+      "response_b": "To find out what percentage of Earth's oxygen comes from Brazilian Amazon forests, we need to follow these steps:\n\n1. Identify the total percentage of Earth's oxygen produced by the Amazon rainforest.\n2. Determine the portion of the Amazon that is in Brazil.\n3. Calculate the combined contribution from both parts.\n\nLet's go through each step:\n\n1. The Amazon rainforest produces 6% of Earth's oxygen.\n2. Brazil contains 60% of the Amazon, so we need to find out how much of Brazil's Amazon forest contributes to this percentage. We do this by multiplying:\n   \\[\n   6\\% \\times 60\\% = 3.6\\%\n   \\]\n\nSo, 3.6% of Earth's oxygen comes from Brazilian Amazon forests.\n\nThe answer is: 3.6%",
+      "response_contradictory": "The Amazon rainforest produces 20% of Earth's oxygen, and it is located primarily in Brazil with its portion covering approximately 5.5 million square kilometers. Therefore, the answer to what percentage of Earth's oxygen comes from Brazilian Amazon forests is:\n\n20%",
+      "consistency_a_vs_b": 0.9010695219039917,
+      "consistency_a_vs_both": 0.7427850961685181,
+      "consistency_b_vs_both": 0.7735850811004639,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 3,
+          "confidence": 0.0
+        },
+        "length_change": 596.0,
+        "response_a_length": 1044,
+        "response_b_length": 680,
+        "response_both_length": 266
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Rank Alice, Bob, and Carol by height and state their exact heights.",
+      "ground_truth": "Context conflict in ordering",
+      "response_a": "Alice: 167 cm\nBob: 162 cm\nCarol: 160 cm",
+      "response_b": "Alice: 158 cm  \nBob: 154 cm  \nCarol: 160 cm",
+      "response_contradictory": "To rank Alice, Bob, and Carol by their heights and provide the exact heights:\n\n1. **Carol's Height**: \n   - Given that Carol is 160 cm tall.\n\n2. **Bob's Height**:\n   - Carol is 3 cm taller than Bob, so:\n     \\[\n     \\text{Bob's height} = \\text{Carol's height} + 3 = 160\\, \\text{cm} + 3\\, \\text{cm} = 163\\, \\text{cm}\n     \\]\n\n3. **Alice's Height**:\n   - Bob is 5 cm taller than Carol, and Alice is also 5 cm taller than Bob, so:\n     \\[\n     \\text{Alice's height} = \\text{Bob's height} + 5 = 163\\, \\text{cm} + 5\\, \\text{cm} = 168\\, \\text{cm}\n     \\]\n\nRanking by height from tallest to shortest:\n\n- **Carol**: 160 cm\n- **Bob**: 163 cm\n- **Alice**: 168 cm\n\nFinal answer: Carol is 16",
+      "consistency_a_vs_b": 0.9853365421295166,
+      "consistency_a_vs_both": 0.6000208258628845,
+      "consistency_b_vs_both": 0.5850529670715332,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 5,
+          "confidence": 0.0
+        },
+        "length_change": 638.0,
+        "response_a_length": 39,
+        "response_b_length": 43,
+        "response_both_length": 679
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "medium",
+      "question": "Can we definitively say X is a C?",
+      "ground_truth": "Context conflict: logical validity",
+      "response_a": "No, we cannot definitively say that X is a C based on the given information alone.\n\nThe premise states:\n1. If all A are B, and all B are C.\n2. This implies that if something is an A, then it must also be a C.\n\nHowever, this statement does not provide any information about individual instances of A or how they relate to C in specific cases (e.g., X). The relationship described applies to the entire set of As but does not give us direct evidence for or against the categorization of particular instances within that set.\n\nTherefore:\n- We can conclude that all members of category A are also in category C.\n- But we cannot definitively say anything about a specific instance (X) without additional information.",
+      "response_b": "No, based solely on the given information that \"all A are B\" and \"some B are C,\" it cannot be definitively concluded that \"X is a C.\" The statement does not provide any specific relationship between the entity X and category C. Therefore, we do not have enough information to make such a definitive assertion about X being a C.",
+      "response_contradictory": "Yes, based on the given information:\n\n1. \"If all A are B\" means \\(A \\subseteq B\\).\n2. \"If all A are B and some B are C\" means that there exists at least one element in set B which is also in set C. Therefore, \\(B \\cap C \\neq \\emptyset\\).\n\nSince the first condition tells us that all members of A are members of B (i.e., \\(A \\subseteq B\\)), and the second condition indicates that there is at least one member common to both sets B and C (\\(B \\cap C \\neq \\emptyset\\)), we can conclude:\n\n1. Every element in set A is also an element of set B.\n2. There exists at least one element in set B which is also in set C.\n\nGiven these two conditions, it follows logically that every member of A must be a part of both sets B and C, hence \\(A \\subseteq B\\) and \\(B \\cap C \\neq \\emptyset\\). Therefore, all members of A are also elements of C. \n\nThus, we can definitively say that X is an element of set C (i.e., \\(X \\in C\\)).",
+      "consistency_a_vs_b": 0.8639728426933289,
+      "consistency_a_vs_both": 0.5179974436759949,
+      "consistency_b_vs_both": 0.4829789698123932,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 16,
+          "confidence": 0.0
+        },
+        "length_change": 393.0,
+        "response_a_length": 711,
+        "response_b_length": 327,
+        "response_both_length": 912
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What is the GDP per capita and which sector employs the most people?",
+      "ground_truth": "Context conflict: sector percentages don't match",
+      "response_a": "The GDP per capita for this country would be calculated by dividing its total GDP by the total population. The GDP is $5 trillion, and the population is 100 million, so:\n\n\\[ \\text{GDP Per Capita} = \\frac{\\$5 \\text{ Trillion}}{100 \\text{ Million}} = \\$50,000 \\]\n\nThe sector that employs the most people is services, which makes up 60% of the workforce.\n\nSo, the GDP per capita is $50,000 and the service sector employs the most people.",
+      "response_b": "GDP per Capita:\n- Country Population = 100 million\n- Gross Domestic Product (GDP) = $5 trillion\n\nTo calculate GDP per Capita, we need to divide the total GDP by the country's population:\n\n\\[ \\text{GDP per Capita} = \\frac{\\text{Total GDP}}{\\text{Country Population}} \\]\n\n\\[ \\text{GDP per Capita} = \\frac{5,000,000,000}{100,000,000} \\]\n\n\\[ \\text{GDP per Capita} = 50 \\text{ USD} \\]\n\nSector with the Most People Employed:\n- Services: 50% of the population\n\nTherefore, the GDP per capita is $50 USD and services employ the most people in this country (50% of the population).",
+      "response_contradictory": "GDP per Capita:\n- First scenario (100M population, $5 trillion GDP): \n  $$ \\text{GDP per Capita} = \\frac{\\$5\\,trillion}{100\\,million \\times 365} = \\$428.61 $$\n- Second scenario (50% in services, 30% in manufacturing, 20% in agriculture):\n  $$ \\text{GDP per Capita} = \\frac{\\$5\\,trillion}{100\\,million \\times 365} = \\$428.61 $$\nTherefore, the GDP per capita is approximately $428.61.\n\nSector with Most People Employed:\n- First scenario (100M population):\n  - Services: 60%\n  - Manufacturing: 30%\n  - Agriculture: 10%\n- Second scenario (50% in services, 30% in manufacturing, 20% in agriculture):\n  - Services: 50%\n  - Manufacturing: 30%\n  - Agriculture: 20%\n\nThe sector that employs the most people is services.",
+      "consistency_a_vs_b": 0.8875716924667358,
+      "consistency_a_vs_both": 0.8293555974960327,
+      "consistency_b_vs_both": 0.8093804121017456,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 5,
+          "confidence": 0.0
+        },
+        "length_change": 207.5,
+        "response_a_length": 434,
+        "response_b_length": 571,
+        "response_both_length": 710
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What is the typical efficiency of photosynthesis in converting sunlight to chemical energy?",
+      "ground_truth": "Context conflict: 3-6% (correct for overall) vs 10-15%",
+      "response_a": "The efficiency of photosynthesis in converting sunlight to chemical energy is typically around 1-2%. This means that only a small fraction, approximately 1% to 2%, of the total energy received from sunlight during photosynthesis is effectively converted into usable chemical energy stored as glucose (C\u2086H\u2081\u2082O\u2086) and oxygen gas (O\u2082).",
+      "response_b": "The typical efficiency of photosynthesis in converting sunlight to chemical energy is approximately 10-15%. This means that only a small fraction of the solar radiation captured by plants can be effectively used for generating ATP and NADPH, the primary energy carriers in the Calvin cycle. The remaining part is either lost as heat or not fully utilized due to inefficiencies in the conversion process.",
+      "response_contradictory": "The typical efficiency of photosynthesis in converting sunlight to chemical energy is around 10-15%.",
+      "consistency_a_vs_b": 0.8416273593902588,
+      "consistency_a_vs_both": 0.9242994785308838,
+      "consistency_b_vs_both": 0.8475541472434998,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 266.5,
+        "response_a_length": 330,
+        "response_b_length": 403,
+        "response_both_length": 100
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "hard",
+      "question": "What percentage of the body's energy does the brain consume?",
+      "ground_truth": "Context conflict: 20% vs 25% (literature varies 20-25%)",
+      "response_a": "The answer is 20%. The human brain consumes approximately 20% of the total body's energy or oxygen.",
+      "response_b": "The answer is 25%.",
+      "response_contradictory": "The answer is 25%. The context provided states that the human brain consumes 25% of its body's energy.",
+      "consistency_a_vs_b": 0.45251721143722534,
+      "consistency_a_vs_both": 0.9153478741645813,
+      "consistency_b_vs_both": 0.620894730091095,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 43.5,
+        "response_a_length": 99,
+        "response_b_length": 18,
+        "response_both_length": 102
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "What is the exact oxygen percentage in Earth's atmosphere?",
+      "ground_truth": "Context conflict: 21% (correct) vs 20%",
+      "response_a": "The exact oxygen percentage in Earth's atmosphere is 21%.",
+      "response_b": "The exact oxygen percentage in Earth's atmosphere is 20%.",
+      "response_contradictory": "The exact oxygen percentage in Earth's atmosphere is 21%.",
+      "consistency_a_vs_b": 0.9607389569282532,
+      "consistency_a_vs_both": 1.0,
+      "consistency_b_vs_both": 0.9607389569282532,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 0.0,
+        "response_a_length": 57,
+        "response_b_length": 57,
+        "response_both_length": 57
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "easy",
+      "question": "At what temperature should a person be considered to have a fever?",
+      "ground_truth": "Context conflict: clinical definitions vary",
+      "response_a": "A person should be considered to have a fever when their body temperature reaches or exceeds 38\u00b0C (100.4\u00b0F).",
+      "response_b": "A person is generally considered to have a fever when their body temperature reaches or exceeds 37.5\u00b0C (or 99.5\u00b0F).",
+      "response_contradictory": "A person should be considered to have a fever when their body temperature reaches or exceeds the threshold of 38\u00b0C (100.4\u00b0F).",
+      "consistency_a_vs_b": 0.9679728746414185,
+      "consistency_a_vs_both": 0.9870578050613403,
+      "consistency_b_vs_both": 0.9600332975387573,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 13.5,
+        "response_a_length": 108,
+        "response_b_length": 115,
+        "response_both_length": 125
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "scientific_facts",
+      "difficulty": "medium",
+      "question": "In what year was the DNA double helix structure discovered?",
+      "ground_truth": "Context conflict: 1953 (correct) vs 1952",
+      "response_a": "The DNA double helix structure was discovered in 1953.",
+      "response_b": "The DNA double helix structure was discovered in 1952. This groundbreaking discovery was made by James Watson and Francis Crick, building upon earlier work that included analysis of Rosalind Franklin's X-ray diffraction data.",
+      "response_contradictory": "The correct answer is that the DNA double helix structure was discovered in 1953, not 1952 as mentioned in the context provided. Rosalind Franklin's X-ray diffraction data played a crucial role in determining its shape. Watson and Crick used this information along with their own observations to develop the structure of DNA that we know today.",
+      "consistency_a_vs_b": 0.8630077838897705,
+      "consistency_a_vs_both": 0.8708958625793457,
+      "consistency_b_vs_both": 0.9391871094703674,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 1,
+          "sentence_count": 3,
+          "confidence": 0.3333333333333333
+        },
+        "length_change": 204.5,
+        "response_a_length": 54,
+        "response_b_length": 225,
+        "response_both_length": 344
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct annual compound growth rate?",
+      "ground_truth": "Context conflict: 4.14% (correct) vs 5%",
+      "response_a": "The correct annual compound growth rate can be calculated using the formula for compound interest:\n\n\\[ A = P(1 + r)^n \\]\n\nWhere:\n- \\( A \\) is the final amount (1.5 million),\n- \\( P \\) is the initial amount (1 million),\n- \\( n \\) is the number of years (10),\n- \\( r \\) is the annual compound growth rate.\n\nRearranging this formula to solve for \\( r \\):\n\n\\[ 1.5 = 1(1 + r)^{10} \\]\n\n\\[ 1.5 = (1 + r)^{10} \\]\n\nTaking the 10th root of both sides:\n\n\\[ 1.5^{1/10} = 1 + r \\]\n\nSolving for \\( r \\):\n\n\\[ r = 1.5^{1/10} - 1 \\]\n\nUsing a calculator or logarithm tables, we can find that:\n\n\\[ 1.5^{1/10} \\approx 1.03927 \\]\n\nSo,\n\n\\[ r \\approx 1.03927 - 1 = 0.03927 \\]\n\nConverting this to a",
+      "response_b": "The correct annual compound growth rate over a period of 10 years where the population has grown from 1 million to 1.5 million would be approximately 5%.",
+      "response_contradictory": "The correct answer is that the population grew by 50% over 10 years, which corresponds to an annual compound growth rate of approximately 5%.",
+      "consistency_a_vs_b": 0.7168545126914978,
+      "consistency_a_vs_both": 0.6221264600753784,
+      "consistency_b_vs_both": 0.8711239099502563,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 272.5,
+        "response_a_length": 674,
+        "response_b_length": 153,
+        "response_both_length": 141
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "How long does it take to fly around Earth at 1000 km/h?",
+      "ground_truth": "Context conflict: 40h (correct) vs 38h",
+      "response_a": "It would take approximately 40 hours to fly around the Earth at a speed of 1000 km/h.",
+      "response_b": "It would take approximately 38 hours to travel around the Earth at a speed of 1000 km/h.",
+      "response_contradictory": "It takes approximately 38 hours to fly around the Earth at 1000 km/h.",
+      "consistency_a_vs_b": 0.9285992980003357,
+      "consistency_a_vs_both": 0.9175686836242676,
+      "consistency_b_vs_both": 0.8631124496459961,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 17.5,
+        "response_a_length": 85,
+        "response_b_length": 88,
+        "response_both_length": 69
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "medium",
+      "question": "What is the pace difference (min/km) between elite and average runners?",
+      "ground_truth": "Context conflict in average time",
+      "response_a": "To find the pace difference between elite and average runners, we need to calculate their speeds first and then determine how much slower or faster they are per kilometer.\n\n1. Convert Marathon distances:\n   - Elite runner time = 2 hours 10 minutes = 2 + (10/60) hours = 2.175 hours\n   - Average runner time = 4 hours 30 minutes = 4 + (30/60) hours = 4.5 hours\n\n2. Calculate speeds:\n   - Elite runner speed = Marathon distance / Elite runner time = 42.195 km / 2.175 hours \u2248 19.574 km/h\n   - Average runner speed = Marathon distance / Average runner time = 42.195 km / 4.5 hours \u2248 9.364 km/h\n\n3. Calculate pace differences:\n   - Pacedifference per hour = Elite runner speed / Average runner speed = 19.574 km/h / 9.364 km/h \u2248 2.08\n   - Pace difference in minutes/km = (Pacedifference per hour) \u00d7 (1 hour",
+      "response_b": "To calculate the pace difference between an elite runner and an average runner, we need to convert their times into pace units of minutes per kilometer (min/km).\n\n1. **Elite Runner:**\n   - Total time = 2 hours + 10 minutes = 2 hours 10 minutes.\n   - Convert total time into minutes: \\( 2 \\text{ hours} \\times 60 \\text{ minutes/hour} + 10 \\text{ minutes} = 130 \\text{ minutes} \\).\n   - Pace per km = Total Time / Distance\n     \\[\n     \\text{Pace (min/km)}_{\\text{Elite}} = \\frac{130 \\text{ minutes}}{42.195 \\text{ km}}\n     \\]\n   - Calculate the pace:\n     \\[\n     \\approx 3.067 \\text{ min/km}\n     \\]\n\n2. **Average Runner:**\n   - Total time = 4 hours + 0 minutes = 4 hours.\n   - Convert total time into minutes: \\( 4 \\text{ hours} \\times 60 \\text{ minutes/hour} = 240 \\text",
+      "response_contradictory": "To calculate the pace difference (in minutes per kilometer) between elite and average runners for a marathon, we need to find their individual paces in minutes per kilometer and then subtract them.\n\nFor elite runners:\n- Time taken = 2 hours 10 minutes\n- Convert time into minutes: \\(2 \\times 60 + 10 = 130\\) minutes\n- Pace per km = \\( \\frac{130}{42.195} \\) approximately equal to about 3 minutes per kilometer.\n\nFor average runners:\n- Time taken = 4 hours 00 minutes\n- Convert time into minutes: \\(4 \\times 60 + 0 = 240\\) minutes\n- Pace per km = \\( \\frac{240}{42.195} \\) approximately equal to about 5.7 minutes per kilometer.\n\nNow, subtract the pace of average runners from that of elite runners:\n\\(3 - 5.7 = -2.7\\)\n\nThe negative value indicates a slower pace for the average runners compared to the elite runners. Thus, the pace difference is -2.7 minutes/km or simply stated as an increase in time per kil",
+      "consistency_a_vs_b": 0.9064740538597107,
+      "consistency_a_vs_both": 0.8519322276115417,
+      "consistency_b_vs_both": 0.8703638315200806,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 11,
+          "confidence": 0.0
+        },
+        "length_change": 120.5,
+        "response_a_length": 802,
+        "response_b_length": 773,
+        "response_both_length": 908
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "What is the correct final amount and total return percentage?",
+      "ground_truth": "Context conflict: ~96.7% vs 100% return",
+      "response_a": "The compound interest of $10,000 with an annual return rate of 7% over a period of 10 years results in a final amount of $19,672. The total return percentage can be calculated as follows:\n\nFinal Amount = Principal * (1 + Rate) ** Time\nFinal Amount = $10,000 * (1 + 0.07) ** 10\nFinal Amount = $10,000 * (1.07) ** 10\n\nUsing a financial calculator or a compound interest table, the final amount after 10 years is approximately $19,672.\n\nThe total return percentage is calculated as:\nTotal Return Percentage = (Final Amount - Principal) / Principal\nTotal Return Percentage = ($19,672 - $10,000) / $10,000\n\nUsing a financial calculator or a compound interest table, the total return percentage can be found to be approximately 96.72%.\n\nSo, the correct final amount is $19,672 and the total return percentage is about 96.72%.",
+      "response_b": "The correct final amount after investing $10,000 at a 7% annual return for 10 years is $20,053.86 (approximately). The total return percentage from an initial investment of $10,000 to the final amount of $20,053.86 would be about 100.54%.",
+      "response_contradictory": "The correct final amount with compound interest over 10 years on a $10,000 investment at an 7% annual rate of return is $20,000. The total return percentage from investing $10,000 at 7% annually for 10 years would be approximately 100%.",
+      "consistency_a_vs_b": 0.8023915886878967,
+      "consistency_a_vs_both": 0.84822678565979,
+      "consistency_b_vs_both": 0.9319204688072205,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 292.5,
+        "response_a_length": 819,
+        "response_b_length": 238,
+        "response_both_length": 236
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "easy",
+      "question": "What is the exact height of K2 in meters?",
+      "ground_truth": "Context conflict: 8,612m vs 8,238m",
+      "response_a": "The exact height of K2 is 8,849 - 237 = 8,612 meters.",
+      "response_b": "The exact height of K2 is \\( 8,849 \\text{ m} - 611 \\text{ m} = 8,238 \\text{ m} \\).",
+      "response_contradictory": "The exact height of K2 is 8,238 meters (8,849 - 611 = 8,238).",
+      "consistency_a_vs_b": 0.8818949460983276,
+      "consistency_a_vs_both": 0.9418368935585022,
+      "consistency_b_vs_both": 0.9306594133377075,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 6.5,
+        "response_a_length": 53,
+        "response_b_length": 82,
+        "response_both_length": 61
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "hard",
+      "question": "How long did the Berlin Wall stand?",
+      "ground_truth": "Context conflict: 28 years (correct: 1961-1989) vs 30 years",
+      "response_a": "The Berlin Wall stood for 28 years.",
+      "response_b": "The Berlin Wall stood for 30 years.",
+      "response_contradictory": "The Berlin Wall stood for 28 years before its fall on November 9, 1989.",
+      "consistency_a_vs_b": 0.9507656693458557,
+      "consistency_a_vs_both": 0.8637080192565918,
+      "consistency_b_vs_both": 0.8300175070762634,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 36.0,
+        "response_a_length": 35,
+        "response_b_length": 35,
+        "response_both_length": 71
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "easy",
+      "question": "On what date did humans first walk on the Moon?",
+      "ground_truth": "Context conflict: July 20 (correct) vs July 21",
+      "response_a": "July 20, 1969",
+      "response_b": "July 20, 1969.",
+      "response_contradictory": "The answer is July 20, 1969. This was the day when astronauts Neil Armstrong and Buzz Aldrin became the first people to step onto the lunar surface during the Apollo 11 mission.",
+      "consistency_a_vs_b": 0.987544059753418,
+      "consistency_a_vs_both": 0.5412782430648804,
+      "consistency_b_vs_both": 0.5495202541351318,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 163.5,
+        "response_a_length": 13,
+        "response_b_length": 14,
+        "response_both_length": 177
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "What was the total death toll of World War I?",
+      "ground_truth": "Context conflict: estimates vary 17-20M",
+      "response_a": "The estimated total death toll for World War I is approximately 17 million people. This figure includes both military casualties and civilian deaths, with a significant portion coming from the United Kingdom, Russia, Germany, France, Austria-Hungary, Italy, Japan, China, Serbia, Romania, Bulgaria, Belgium, Portugal, Spain, Greece, Denmark, Finland, Estonia, Norway, Sweden, Switzerland, Liechtenstein, Luxembourg, Vatican City, and Yugoslavia. The war had far-reaching consequences for the global economy, geopolitics, and technology development in various fields such as medicine, telecommunications, and transportation.",
+      "response_b": "The estimated total death toll for World War I, including both military and civilian casualties, is approximately 17 million people. This figure includes:\n\n- 6.985 million deaths in the military\n- 2.437 million civilian deaths\n\nWhile this doesn't account for all recorded deaths (some were likely not officially accounted for), it represents a significant portion of total World War I casualties and remains one of the deadliest conflicts in history.",
+      "response_contradictory": "The estimated total death toll for World War I, including both military and civilian casualties, is approximately 30 million people. This figure represents a significant portion of the global population during that time.",
+      "consistency_a_vs_b": 0.8939641714096069,
+      "consistency_a_vs_both": 0.892480731010437,
+      "consistency_b_vs_both": 0.9616512060165405,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 316.5,
+        "response_a_length": 623,
+        "response_b_length": 450,
+        "response_both_length": 220
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "historical_facts",
+      "difficulty": "medium",
+      "question": "How many voyages did Columbus make to the Americas?",
+      "ground_truth": "Context conflict: 4 (correct) vs 3",
+      "response_a": "Christopher Columbus made a total of 4 voyages to the Americas.",
+      "response_b": "Christopher Columbus made 3 voyages to the Americas.",
+      "response_contradictory": "Christopher Columbus made a total of 3 voyages to the Americas from 1492 to 1504. The correct answer is 3.",
+      "consistency_a_vs_b": 0.9115149974822998,
+      "consistency_a_vs_both": 0.8712320327758789,
+      "consistency_b_vs_both": 0.8610935211181641,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 2,
+          "confidence": 0.0
+        },
+        "length_change": 48.5,
+        "response_a_length": 63,
+        "response_b_length": 52,
+        "response_both_length": 106
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "What was the average time between iPhone releases from original to iPhone 4?",
+      "ground_truth": "Context conflict in intermediate calculation",
+      "response_a": "The average time between iPhone releases from the original (iPhone) to iPhone 4 is approximately 5 years and 9 months, or about 6.25 years when calculated precisely.",
+      "response_b": "To calculate the average time between iPhone releases from the original model (iPhone) to the iPhone 4, we need to consider the release dates of each subsequent model.\n\nThe timeline is as follows:\n- iPhone: June 2007\n- iPhone 3G: July 2008\n- iPhone 4: June 2010\n\nLet's calculate the time differences:\n\n1. **iPhone (June 2007) to iPhone 3G (July 2008):**\n   - Time difference = 6 months\n\n2. **iPhone 3G (July 2008) to iPhone 4 (June 2010):**\n   - Time difference = 2 years and 4 months, which is approximately 2.75 years.\n\nNow we can add these time intervals together:\n\n- Total time from the original iPhone release in June 2007 to the iPhone 4 release in June 2010:\n  - (6 months) + (2.75 years)\n\nTo make it easier, let's convert everything into a consistent unit for calculation. We'll use months since we have some data already:\n\n- 6 months\n- 2.7",
+      "response_contradictory": "To calculate the average time between iPhone releases from the original (iPhone) to iPhone 4, we need to consider all the given intervals:\n\n1. iPhone \u2192 iPhone 3G: 13 months\n2. iPhone 3G \u2192 iPhone 4: 14 months\n\nNow let's add these together:\n13 months + 14 months = 27 months\n\nTo convert this into a more common time unit, we can express it in years and months:\n\n27 months \u00f7 12 \u2248 2.25 years\n\nTherefore, the average time between iPhone releases from original to iPhone 4 is approximately **2.25 years** or **2 years and 3 months**.\n\nThe final answer is: **2.25 years**",
+      "consistency_a_vs_b": 0.8204883337020874,
+      "consistency_a_vs_both": 0.8935171365737915,
+      "consistency_b_vs_both": 0.9171842932701111,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 7,
+          "confidence": 0.0
+        },
+        "length_change": 57.5,
+        "response_a_length": 165,
+        "response_b_length": 848,
+        "response_both_length": 564
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "hard",
+      "question": "How many years after special relativity did Einstein win the Nobel Prize?",
+      "ground_truth": "Context conflict: 16 vs 20 years (1921-1905=16, so context_b is wrong)",
+      "response_a": "7 years",
+      "response_b": "The answer is 20 years.",
+      "response_contradictory": "Einstein won the Nobel Prize 16 years after he published special relativity in 1905.",
+      "consistency_a_vs_b": 0.595348596572876,
+      "consistency_a_vs_both": 0.11239556223154068,
+      "consistency_b_vs_both": 0.1886252760887146,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 69.0,
+        "response_a_length": 7,
+        "response_b_length": 23,
+        "response_both_length": 84
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How many days was the Apollo 11 mission from launch to landing on moon?",
+      "ground_truth": "Context conflict: 4 days vs 5 days",
+      "response_a": "The Apollo 11 mission lasted for 7 days, starting from July 16, 1969, when it launched and ending with its return to Earth on July 24, 1969.",
+      "response_b": "The Apollo 11 mission lasted for approximately 7 days, as follows:\n\n- Launch on July 16, 1969\n- Moon landing on July 20, 1969 (after an ascent phase)\n- Return to Earth on July 24, 1969\n\nSo the entire duration from launch to return was about 7 days.",
+      "response_contradictory": "The Apollo 11 mission lasted for 7 days from launch until landing on the Moon:\n\n- Launch (July 16, 1969)\n- Stay on the Moon (July 20, 1969 - July 24, 1969)\n- Return to Earth (July 24, 1969)\n\nSo, the mission duration is from July 16, 1969, until July 24, 1969.",
+      "consistency_a_vs_b": 0.945950984954834,
+      "consistency_a_vs_both": 0.9096159934997559,
+      "consistency_b_vs_both": 0.9351320862770081,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 65.0,
+        "response_a_length": 140,
+        "response_b_length": 248,
+        "response_both_length": 259
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "When did peace negotiations begin after WWI?",
+      "ground_truth": "Context conflict: 1919 vs 1920 signing",
+      "response_a": "Peace negotiations began immediately after the end of World War I on November 11, 1918, following the Armistice that ended hostilities in Europe. The actual treaty was signed a few days later, on June 28, 1919, which officially concluded the peace treaties and marked the formal end of the war.\n\nThe negotiations spanned several months to ensure complete agreement among all parties involved. They continued well into the following year due to significant differences in interpretation between Germany and France regarding reparations and territorial changes.",
+      "response_b": "Based on the information provided:\n\n- The Treaty of Versailles was signed on June 28, 1920.\n- World War I officially ended on November 11, 1918.\n- Negotiations for the treaty took 6 months.\n\nTherefore, peace negotiations began after WWI on November 11, 1918.",
+      "response_contradictory": "The peace negotiations for World War I began on June 28, 1919. This date marks the signing of the Treaty of Versailles, which ended the war. The actual negotiations had taken approximately six months before this signing took place.",
+      "consistency_a_vs_b": 0.9004554748535156,
+      "consistency_a_vs_both": 0.9083316326141357,
+      "consistency_b_vs_both": 0.9107393026351929,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 3,
+          "confidence": 0.0
+        },
+        "length_change": 177.5,
+        "response_a_length": 559,
+        "response_b_length": 258,
+        "response_both_length": 231
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "temporal_reasoning",
+      "difficulty": "medium",
+      "question": "How long was the period between Declaration and Constitution?",
+      "ground_truth": "Context conflict: calculation error (actual is ~12 years)",
+      "response_a": "The period between the signing of the Declaration of Independence on July 4, 1776, and the ratification of the Constitution on June 21, 1788, is approximately 10 years and 3 months.",
+      "response_b": "The period between the signing of the Declaration of Independence on July 4, 1776, and the ratification of the Constitution on June 21, 1788, is approximately 11 years.",
+      "response_contradictory": "The period between the signing of the Declaration of Independence on July 4, 1776, and the ratification of the Constitution on June 21, 1788, is approximately 10 years. Specifically:\n\n- The Declaration was signed on July 4, 1776.\n- The Constitution was ratified on June 21, 1788.\n\nThe difference between these dates is exactly 10 years and a bit more than a month.",
+      "consistency_a_vs_b": 0.9944925904273987,
+      "consistency_a_vs_both": 0.9773022532463074,
+      "consistency_b_vs_both": 0.9795681238174438,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 4,
+          "confidence": 0.0
+        },
+        "length_change": 189.5,
+        "response_a_length": 181,
+        "response_b_length": 168,
+        "response_both_length": 364
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "Is the ground wet or dry?",
+      "ground_truth": "Logical contradiction: modus ponens violated",
+      "response_a": "The ground is wet.",
+      "response_b": "The ground is dry.",
+      "response_contradictory": "The answer is that the ground is dry.",
+      "consistency_a_vs_b": 0.8764128088951111,
+      "consistency_a_vs_both": 0.7421442270278931,
+      "consistency_b_vs_both": 0.8557838797569275,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 19.0,
+        "response_a_length": 18,
+        "response_b_length": 18,
+        "response_both_length": 37
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "hard",
+      "question": "Are whales warm-blooded or cold-blooded, and do they have lungs or gills?",
+      "ground_truth": "Logical contradiction in conclusion",
+      "response_a": "Whales are warm-blooded animals, and they also have lungs.",
+      "response_b": "Whales are warm-blooded, but they do not have gills. Instead, they have lungs for breathing air and specialized adaptations that allow them to extract oxygen from their surroundings when submerged in water.",
+      "response_contradictory": "Whales are warm-blooded and they have lungs.",
+      "consistency_a_vs_b": 0.8820123076438904,
+      "consistency_a_vs_both": 0.986467719078064,
+      "consistency_b_vs_both": 0.8699702024459839,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "confidence": 0.0
+        },
+        "length_change": 88.0,
+        "response_a_length": 58,
+        "response_b_length": 206,
+        "response_both_length": 44
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "medium",
+      "question": "What can we conclude about R?",
+      "ground_truth": "Logical contradiction in modus ponens",
+      "response_a": "Given the statements:\n1. \"If P then Q\" (P \u2192 Q)\n2. P is true\n\nWe need to determine what can be concluded about R given that:\n\n3. \\( Q \\) implies \\( R \\) (Q \u2192 R)\n\nLet's analyze this step-by-step:\n\n### Step 1: Understand the Given Statements\n- Statement 1: If P then Q (\\(P \\rightarrow Q\\))\n- Statement 2: P is true\n\nFrom Statement 1, we know that whenever P is true, Q must also be true. This means \\(P\\) and \\(Q\\) are related in such a way where if P happens (is true), then Q will definitely follow.\n\n### Step 2: Analyze the Implication of \\(P \\rightarrow Q\\)\nIf Statement 1 holds (\\(P \\rightarrow Q\\)), then we can conclude that whenever \\(P\\) is true, \\(Q\\) must be true. This is because:\n- If P were false (i.e., \\(P\\) was not true), then according to the implication statement, it would automatically follow that Q cannot be true.\n  - Therefore, if \\(P\\) is true, \\(Q\\) has to be true.\n\n### Step 3: Consider",
+      "response_b": "If \\( P \\rightarrow Q \\) (P implies Q), and \\( P \\) is true, then the statement \\( Q \\) must be false according to the direct implication. However, this does not provide information directly about \\( R \\). Without additional context or rules linking \\( Q \\) and \\( R \\), we cannot definitively conclude anything about \\( R \\) based solely on the given statements.\n\nTherefore, the answer is that there is no clear conclusion about \\( R \\).",
+      "response_contradictory": "We cannot conclusively determine the truth value of \\( R \\) based on the information given. The statements provided are:\n\n1. \\( P \\rightarrow Q \\)\n2. \\( P \\) is true.\n3. \\( Q \\rightarrow R \\)\n\nFrom statement 2, we know that \\( P \\) is true. Using modus ponens (if \\( A \\rightarrow B \\), and \\( A \\) is true, then \\( B \\) is true), we can deduce:\n\n\\[ P \\rightarrow Q \\]\n\nSince \\( P \\) is true and \\( P \\rightarrow Q \\) holds, it follows that:\n\n\\[ Q \\] must also be true.\n\nWith statement 3, knowing \\( Q \\rightarrow R \\) (if \\( Q \\) then \\( R \\)), and having established \\( Q \\) as true from above, we can apply modus ponens again to conclude:\n\n\\[ Q \\rightarrow R \\]\n\nThis shows that if \\( Q \\) is true, then \\( R \\) must also be true.\n\nThus, the conclusion regarding \\( R \\) based on given information is:\n- If \\( P \\rightarrow Q \\), and \\( P \\) is true, then \\( Q \\) is true.\n- Since \\(",
+      "consistency_a_vs_b": 0.7586093544960022,
+      "consistency_a_vs_both": 0.7786007523536682,
+      "consistency_b_vs_both": 0.7200767993927002,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 1,
+          "sentence_count": 10,
+          "confidence": 0.1
+        },
+        "length_change": 211.5,
+        "response_a_length": 911,
+        "response_b_length": 438,
+        "response_both_length": 886
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "logical_reasoning",
+      "difficulty": "easy",
+      "question": "Based on the contexts, can penguins fly?",
+      "ground_truth": "Logical contradiction between premises",
+      "response_a": "Yes, based on the given context, penguins can fly. The reasoning is that all birds can fly and penguins are birds. Therefore, since penguins fit into the category of birds, they also belong to the group capable of flying.",
+      "response_b": "No, penguins cannot fly.",
+      "response_contradictory": "Based on the context provided:\n\n- \"All birds can fly.\"\n- \"Penguins are birds.\"\n- \"Penguins cannot fly.\"\n\nFrom these statements, we can conclude that while all birds can fly (including penguins), penguins do not actually have the ability to fly. Therefore, based on this information alone, penguins **cannot** fly.",
+      "consistency_a_vs_b": 0.759274959564209,
+      "consistency_a_vs_both": 0.8198518753051758,
+      "consistency_b_vs_both": 0.7843520641326904,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": true,
+          "negation_count": 2,
+          "sentence_count": 5,
+          "confidence": 0.4
+        },
+        "length_change": 190.5,
+        "response_a_length": 221,
+        "response_b_length": 24,
+        "response_both_length": 313
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "multi_hop_reasoning",
+      "difficulty": "hard",
+      "question": "What was Company X's total revenue growth from 2020 to 2022?",
+      "ground_truth": "Context conflict: 80% growth vs 20% growth",
+      "response_a": "To calculate the total revenue growth of Company X from 2020 to 2022, we need to add up the individual percentage increases:\n\n1. Revenue in 2020: $100M\n2. Revenue in 2021 (50% increase): \\(100M \\times 1.5 = 150M\\)\n3. Revenue in 2022 (20% increase on 2021 revenue): \\(150M \\times 1.2 = 180M\\)\n\nNow, let's add the revenues from 2020 and 2022 to get the total growth:\n\nTotal Revenue Growth = $100M + $180M = $280M\n\nTherefore, Company X's total revenue growth from 2020 to 2022 was an increase of $280 million.",
+      "response_b": "To calculate the total revenue growth from 2020 to 2022 for Company X, we need to follow these steps:\n\n1. **Calculate the revenue in 2021:**  \n   Revenue in 2020 = $100M\n   Growth rate in 2021 = 50%\n\n   \\[\n   \\text{Revenue in 2021} = \\text{Revenue in 2020} \\times (1 + \\text{Growth Rate})\n   \\]\n   \\[\n   \\text{Revenue in 2021} = \\$100M \\times 1.5\n   \\]\n   \\[\n   \\text{Revenue in 2021} = \\$150M\n   \\]\n\n2. **Calculate the revenue in 2022:**  \n   Revenue in 2021 = $150M  \n   Decline rate in 2022 = 20%\n\n   \\[\n   \\text{Revenue in 2022} = \\text{Revenue in 2021} \\times (1 - \\text{Decline Rate})\n   \\]",
+      "response_contradictory": "To determine the total revenue growth of Company X from 2020 to 2022, we need to calculate both the compound growth and the net change in revenue.\n\n### Step 1: Calculate Compound Growth\n\nFirst, let's calculate the compounded growth rate:\n\n- In 2020, Company X had $100M.\n- In 2021, it grew by 50%, so the new revenue is:\n  \\[ 100M + (0.50 \\times 100M) = 100M \\times 1.50 = 150M \\]\n- In 2022, it declined by 20%, so the new revenue is:\n  \\[ 150M - (0.20 \\times 150M) = 150M \\times 0.80 = 120M \\]\n\nSo, Company X's total revenue growth from 2020 to 2022 is:\n\\[ 100M + 150M - 120M = 130M \\]\n\n### Step 2: Calculate Net",
+      "consistency_a_vs_b": 0.8880219459533691,
+      "consistency_a_vs_both": 0.8327653408050537,
+      "consistency_b_vs_both": 0.8765923976898193,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 7,
+          "confidence": 0.0
+        },
+        "length_change": 62.0,
+        "response_a_length": 506,
+        "response_b_length": 596,
+        "response_both_length": 613
+      },
+      "has_conflict": true
+    },
+    {
+      "category": "numerical_reasoning",
+      "difficulty": "hard",
+      "question": "Calculate the distance from Sun to Earth in million kilometers.",
+      "ground_truth": "Context conflict: 143.9M km vs 149.2M km",
+      "response_a": "To calculate the distance from the Sun to the Earth, we can use the formula:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of light (distance per second) = 299,792 km/s\n- Time taken by light to reach Earth from the Sun = 8.0 minutes\n\nFirst, we need to convert the time into seconds because the speed is given in kilometers per second:\n\n\\[ 8.0 \\text{ minutes} \\times 60 \\text{ seconds/minute} = 480 \\text{ seconds} \\]\n\nNow, we can calculate the distance using these values:\n\n\\[ \\text{Distance} = 299,792 \\text{ km/s} \\times 480 \\text{ s} \\]\n\n\\[ \\text{Distance} = 139,915,680 \\text{ km} \\]\n\nTo express this distance in million kilometers:\n\n\\[ \\frac{139,915,680 \\text{ km}}{1,000,000} = 139.91568 \\text",
+      "response_b": "To calculate the distance from the Sun to the Earth, we use the formula:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nGiven:\n- Speed of light is 299,792 km/s\n- Light takes 8.3 minutes to reach Earth\n\nFirst, convert the time from minutes to seconds because the speed is given in kilometers per second.\n\n\\[ 8.3 \\text{ minutes} = 8.3 \\times 60 \\text{ seconds} = 501 \\text{ seconds} \\]\n\nNow, calculate the distance:\n\n\\[ \\text{Distance} = 299,792 \\text{ km/s} \\times 501 \\text{ s} \\]\n\n\\[ \\text{Distance} = 149,893,692 \\text{ km} \\]\n\nTo convert this distance into millions of kilometers:\n\n\\[ \\text{Distance in million km} = \\frac{149,893,692}{10^6} \\]\n\n\\[ \\text{Distance in million km} = 1.49893692 \\times 10",
+      "response_contradictory": "To calculate the distance from the Sun to the Earth, we can use the formula:\n\nDistance = Speed \u00d7 Time\n\nGiven:\n- Speed of light (or any other method for calculating this would be approximately 299,792 km/s).\n- Time taken by light to reach the Earth is either 8.0 minutes or 8.3 minutes.\n\nFirst, we need to convert time from minutes to seconds because speed is in kilometers per second (km/s):\n\n\\[ 1 \\text{ minute} = 60 \\text{ seconds} \\]\n\nSo:\n\n\\[ 8.0 \\text{ minutes} = 8.0 \u00d7 60 = 480 \\text{ seconds} \\]\n\\[ 8.3 \\text{ minutes} = 8.3 \u00d7 60 = 508 \\text{ seconds} \\]\n\nNow, we can calculate the distance:\n\nFor light traveling in 480 seconds:\n\\[ Distance = 299,792 \\text{ km/s} \u00d7 480 \\text{ s} = 143,925,760 \\text{ kilometers} \\]\n\nFor light traveling in 508 seconds:\n\\[ Distance",
+      "consistency_a_vs_b": 0.9586157202720642,
+      "consistency_a_vs_both": 0.8974515199661255,
+      "consistency_b_vs_both": 0.8675583600997925,
+      "contradiction_analysis": {
+        "hedging": {
+          "has_hedging": false,
+          "hedging_count": 0,
+          "hedging_words_found": []
+        },
+        "internal_contradiction": {
+          "has_contradiction": false,
+          "negation_count": 0,
+          "sentence_count": 9,
+          "confidence": 0.0
+        },
+        "length_change": 49.5,
+        "response_a_length": 726,
+        "response_b_length": 715,
+        "response_both_length": 770
+      },
+      "has_conflict": true
+    }
+  ]
+}
