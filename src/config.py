@@ -1,7 +1,7 @@
 import os
 
 # Hugging Face Token (get from https://huggingface.co/settings/tokens)
-HF_TOKEN = os.getenv("HF_TOKEN", "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")
+HF_TOKEN = os.getenv("HF_TOKEN", "enter your hf token")
 
 
 # Models to evaluate - add more for comprehensive comparison
