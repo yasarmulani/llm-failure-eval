@@ -142,19 +142,3 @@ Statistical tests assume independence between test cases, which isn't strictly t
 **Comparing models**: When choosing between Llama, Mistral, or GPT variants, this framework quantifies how they handle edge cases beyond standard benchmarks.
 
 **Monitoring production systems**: Re-run evaluations periodically to catch model drift or unexpected behavior after updates.
-
-**Research**: The codebase is MIT licensed. Fork it, extend it, publish with it.
-
-## Contact
-
-Built this to scratch my own itch after seeing too many LLM deployments fail on edge cases that benchmarks missed.
-
-GitHub: [your-username]  
-Email: [your-email]  
-LinkedIn: [your-linkedin]
-
-If you use this framework or find bugs, I'd genuinely appreciate hearing about it.
-
-## License
-
-MIT License - do whatever you want with this code. If it helps you ship better LLM systems, that's enough for me.
